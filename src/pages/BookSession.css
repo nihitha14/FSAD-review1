@@ -1,0 +1,65 @@
+.book-wrapper{
+  min-height:80vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.book-card{
+  background:white;
+  padding:40px;
+  width:500px;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.book-card h1{
+  margin-bottom:10px;
+}
+
+.subtitle{
+  color:#6b7280;
+  margin-bottom:25px;
+}
+
+.booking-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.input-group{
+  text-align:left;
+}
+
+.input-group label{
+  font-weight:600;
+  margin-bottom:6px;
+  display:block;
+}
+
+.input-group input{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #d1d5db;
+  font-size:15px;
+}
+
+.book-btn{
+  margin-top:15px;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(135deg,#6366f1,#4f46e5);
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.book-btn:hover{
+  transform:scale(1.03);
+}

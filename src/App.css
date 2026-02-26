@@ -1,0 +1,26 @@
+.top-nav {
+  display: flex;
+  gap: 32px;
+  background: #fff;
+  padding: 16px 40px;
+  font-family: 'Inter', Arial, sans-serif;
+  border-bottom: 1px solid #e3e5ed;
+}
+.top-nav span {
+  cursor: pointer;
+  font-weight: 500;
+  color: #2c398b;
+  font-size: 1.17rem;
+  padding: 7px 19px;
+  border-radius: 9px;
+  transition: background 0.14s;
+}
+.nav-active, .top-nav span:hover {
+  background: #ecf2ff;
+  color: #222;
+}
+body {
+  margin: 0;
+  background: #f7f8fa;
+  font-family: 'Inter', Arial, sans-serif;
+}

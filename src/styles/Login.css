@@ -1,0 +1,196 @@
+/* ===============================
+   MAIN CONTAINER
+=================================*/
+
+.login-container{
+  display:flex;
+  height:100vh;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* ===============================
+   LEFT IMAGE SIDE
+=================================*/
+
+.login-left{
+  flex:1;
+  background:
+    linear-gradient(
+      rgba(114,105,244,0.2),
+      rgba(121,112,241,0.85)
+    ),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:60px;
+}
+
+.left-overlay{
+  max-width:420px;
+  color:white;
+}
+
+.left-overlay h1{
+  font-size:48px;
+  font-weight:800;
+  letter-spacing:1px;
+  margin-bottom:20px;
+
+  text-shadow:0px 4px 15px rgba(0,0,0,0.6);
+}
+
+.left-overlay p{
+  font-size:20px;
+  font-weight:600;
+  line-height:1.6;
+
+  text-shadow:0px 2px 10px rgba(0,0,0,0.7);
+}
+
+
+/* ===============================
+   RIGHT LOGIN SIDE
+=================================*/
+
+.login-right{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#f7f7fb;
+}
+
+
+/* ===============================
+   LOGIN FORM AREA
+=================================*/
+
+.login-card{
+  width:100%;
+  max-width:380px;
+  display:flex;
+  flex-direction:column;
+}
+
+
+/* Title */
+
+.login-right h1{
+  margin-bottom:6px;
+}
+
+.subtitle{
+  color:#666;
+  margin-bottom:25px;
+}
+
+
+/* ===============================
+   INPUT BOXES
+=================================*/
+
+.login-right input{
+  width:100%;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:15px;
+  transition:0.3s;
+
+  margin-bottom:18px;   /* ✅ SPACE BETWEEN EMAIL & PASSWORD */
+}
+
+/* focus effect */
+
+.login-right input:focus{
+  outline:none;
+  border-color:#6c63ff;
+  box-shadow:0 0 6px rgba(108,99,255,0.3);
+}
+
+
+/* ===============================
+   LOGIN BUTTON
+=================================*/
+
+.login-btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#5a54ff,#6c63ff);
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:5px;
+}
+
+.login-btn:hover{
+  opacity:0.9;
+}
+
+
+/* ===============================
+   REGISTER TEXT
+=================================*/
+
+.register-text{
+  margin-top:15px;
+  font-size:15px;
+  text-align:center;
+}
+
+.register-link{
+  color:#5a54ff;
+  font-weight:bold;
+  cursor:pointer;
+  margin-left:5px;
+}
+
+
+/* ===============================
+   TOGGLE BUTTON (Student/Admin)
+=================================*/
+
+.login-toggle{
+  display:flex;
+  background:#eee;
+  border-radius:30px;
+  margin-bottom:25px;
+  overflow:hidden;
+}
+
+.login-toggle button{
+  flex:1;
+  padding:10px;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.login-toggle .active{
+  background:white;
+  border-radius:30px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* ===============================
+   ERROR MESSAGE
+=================================*/
+
+.error{
+  color:red;
+  font-size:13px;
+  margin-top:-10px;
+  margin-bottom:10px;
+}

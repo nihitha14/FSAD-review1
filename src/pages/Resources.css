@@ -1,0 +1,41 @@
+.resources-page {
+  max-width: 650px;
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 30px 35px 20px 35px;
+  background: #fff;
+}
+.resources-page h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.resource-list {
+  list-style: none;
+  padding: 0;
+}
+.resource-list li {
+  padding: 16px 13px;
+  background: #f6f8fc;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(103,123,185,0.09);
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.res-type {
+  background: #fff5e4;
+  color: #6c829a;
+  padding: 4px 10px;
+  border-radius: 7px;
+  font-size: 0.97rem;
+}
+.res-title {
+  flex: 1;
+  font-weight: 500;
+  color: #222;
+}
+.res-date {
+  color: #949bb9;
+  font-size: 0.95rem;
+}

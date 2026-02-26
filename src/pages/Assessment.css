@@ -1,0 +1,25 @@
+.assessment-page {
+  max-width: 650px;
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 30px 35px 20px 35px;
+  background: #fff;
+}
+.assessment-page h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.assessment-page p {
+  color: #606674;
+  font-size: 1.13rem;
+  margin-bottom: 28px;
+}
+.start-btn {
+  padding: 14px 28px;
+  background: #8B5CF6;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 9px;
+}
