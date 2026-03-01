@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
@@ -16,14 +16,27 @@ function App() {
 
   const user = { name: "John Doe" };
 
+  /* ✅ FIX FOR GITHUB PAGES LOAD */
+  useEffect(() => {
+    setIsLoggedIn(false);   // always start from login page
+  }, []);
+
+  // ---------- LOGIN PAGE ----------
   if (!isLoggedIn) {
-    return <Login onLogin={() => setIsLoggedIn(true)} />;
+    return (
+      <Login
+        onLogin={() => {
+          setIsLoggedIn(true);
+          setPage("Dashboard");
+        }}
+      />
+    );
   }
 
+  // ---------- MAIN APP ----------
   return (
     <div>
 
-      {/* ✅ GLOBAL NAVBAR */}
       <Navbar
         user={user}
         onLogout={() => setIsLoggedIn(false)}
@@ -31,7 +44,6 @@ function App() {
         page={page}
       />
 
-      {/* ✅ PAGE SWITCH */}
       {page === "Dashboard" && <Dashboard setPage={setPage} />}
       {page === "Explore Careers" && <Careers />}
       {page === "Quiz" && <Assessment />}
